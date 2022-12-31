@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet", type="text/css", href="CSS/gallery.css">
+  </head>
+  <body>
+        <input type="checkbox" id="check"> 
+             <header>
+                 <h2> <a href="#" class="logo">Atishay Jain</a></h2>
+                 <div class="navigation">
+                     <a href="index.html">Home</a>
+                     <a href="#">About</a>
+                     <a href="#">Destinations</a>
+                     <a href="#" class="active">Gallery</a>
+                     <a href="contact.html">Get in Touch</a>
+                 </div>
+                 <label for="check">
+                     <i class="fas fa-bars menu-btn"></i>
+                     <i class="fas fa-times close-btn"></i>
+                 </label>
+             </header>
+    <section class="gallery">
+        <div class="container">
+            <div class="heading">
+				<h3>Photo <span>Gallery</span></h3>
+			</div>
+            <div class="row">
+                <div class="gallery-filter">
+                  <span class="filter-item active" data-filter="all">All</span>
+                  <span class="filter-item" data-filter="Switzerland">Switzerland</span>
+                  <span class="filter-item" data-filter="Italy">Italy</span>
+                  <span class="filter-item" data-filter="India">India</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pictures">
+                    <div class="gallery-item Switzerland">
+                        <div class="gallery-item-inner">
+                          <img src="./Images/img/2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery-item India">
+                        <div class="gallery-item-inner">
+                           <img src="./Images/img/112.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery-item Italy">
+                        <div class="gallery-item-inner">
+                           <img src="./Images/img/11.jpg" alt="">
+                        </div>
+                    </div>  
+                </div>   
+                
+                <div class="pictures">
+                    <div class="gallery-item India">
+                        <div class="gallery-item-inner">
+                          <img src="./Images/img/1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery-item Switzerland">
+                        <div class="gallery-item-inner">
+                           <img src="./Images/img/wallpaper.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery-item Italy">
+                        <div class="gallery-item-inner">
+                           <img src="./Images/img/5.jpg" alt="">
+                        </div>
+                    </div> 
+                    <div class="gallery-item Switzerland">
+                        <div class="gallery-item-inner">
+                           <img src="./Images/img/112.jpg" alt="">
+                        </div>
+                    </div> 
+                </div>  
+
+                <div class="pictures">
+                    <div class="gallery-item Italy">
+                        <div class="gallery-item-inner">
+                          <img src="./Images/img/4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery-item Italy">
+                        <div class="gallery-item-inner">
+                           <img src="./Images/img/2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery-item India">
+                        <div class="gallery-item-inner">
+                            <img src="./Images/img/11.jpg" alt="">
+                        </div>
+                    </div>  
+                </div>  
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+          <div class="media-icons">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>  
+          </div>
+                
+        <div class="row">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#" >Destinations</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+        </div>
+        
+        <div class="frow">
+        Copyright © 2022 Atishay Jain - All rights reserved 
+        </div>
+        </div>
+        </footer>
+      <script>
+        const filterContainer = document.querySelector(".gallery-filter");
+        const galleryItems = document.querySelectorAll(".gallery-item");
+        filterContainer.addEventListener("click", (event) =>{
+   if(event.target.classList.contains("filter-item")){
+
+     // deactivate existing active 'filter-item'
+   	filterContainer.querySelector(".active").classList.remove("active");
+
+     // activate new 'filter-item'
+   	event.target.classList.add("active");
+
+   	const filterValue = event.target.getAttribute("data-filter");
+
+   	galleryItems.forEach((item) =>{
+
+       if(item.classList.contains(filterValue) || filterValue === 'all'){
+       	item.classList.remove("hide");
+       	item.classList.add("show");
+       }
+
+       else{
+       	item.classList.remove("show");
+       	item.classList.add("hide");
+       }
+
+   	});
+   }
+ });
+      </script>
+  </body>
+  </html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch</title>
+    <link rel="icon" type="image/x-icon" href="./Images/Icons/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet", type="text/css", href="CSS/contact.css">
+    <script src="./JS/contact.js"></script>
+  </head>
+<body>
+	<section>
+   <input type="checkbox" id="check"> 
+		<header>
+			<h2> <a href="#" class="logo">Atishay Jain</a></h2>
+			<div class="navigation">
+				<a href="index.html">Home</a>
+				<a href="#">About</a>
+				<a href="#">Destinations</a>
+				<a href="gallery.html">Gallery</a>
+				<a href="#" class="active">Get in Touch</a>
+			</div>
+			<label for="check">
+				<i class="fas fa-bars menu-btn"></i>
+				<i class="fas fa-times close-btn"></i>
+			</label>
+		</header>
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="wrapper img" style="background-image: url(./Images/img/wallpaper.jpg);">
+              <div class="row">
+                <div class="col-md-9 col-lg-7">
+                  <div class="contact-wrap w-100 p-md-5 p-4">
+                    <h3 class="mb-4"><strong>Let's Get in Touch</strong></h3>
+                    <div id="form-message-warning" class="mb-4"></div> 
+                    <div id="form-message-success" class="mb-4">
+                      Your message was sent, thank you!
+                    </div>
+                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="name">Full Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                          </div>
+                        </div>
+                        <div class="col-md-6"> 
+                          <div class="form-group">
+                            <label class="label" for="email">Email Address</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="label" for="subject">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="label" for="#">Message</label>
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary">
+                            <div class="submitting"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="justify-content: right; display: flex;">
+                <div class="col-md-6 col-lg-4">
+                    <div class="media-icons-board">
+                      <a href="https://wa.me/+4917661664090"><i class="fa-brands fa-whatsapp"></i></a>
+                      <a href="https://www.facebook.com/profile.php?id=100006791504401"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/i_m._.aj/"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-github"></i></a>  
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/popper.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/jquery.validate.min.js"></script>
+    <script src="JS/contactme.js"></script>
+</section>
+<footer>
+  <div class="footer">
+    <div class="media-icons">
+      <a href="https://wa.me/+4917661664090"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100006791504401"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/i_m._.aj/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>  
+    </div>
+          
+  <div class="row">
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="#">About Us</a></li>
+  <li><a href="#">Destinations</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="contact.html" class="active">Get in Touch</a></li>
+  </ul>
+  </div>
+  
+  <div class="frow">
+  Copyright © 2022 Atishay Jain - All rights reserved 
+  </div>
+  </div>
+  </footer>
+</body>
+</html>

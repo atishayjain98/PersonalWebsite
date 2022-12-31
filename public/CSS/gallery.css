@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+
+header .logo{
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+header .navigation a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+header .navigation a:not(:last-child){
+  margin-right: 30px;
+}
+
+header .navigation a:hover{
+  background: #fff;
+  color: #000;
+}
+
+header .navigation .active{
+  background: #16b5ef;
+  color: #000;
+}
+
+label{
+    display: none;
+    color: #fff;
+  }
+  
+  #check{
+    z-index: 3;
+    display: none;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 0%;
+  }
+  
+  .container .heading {
+    width: 50%;
+    padding: 50px 20px 50px 20px;
+  }
+  
+  .container .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid #222;
+    padding-bottom: 10px;
+    color: #000;
+  }
+  
+  .container .heading h3 span{
+    font-weight: 100;
+  }
+
+
+.row{
+	display: flexible;
+	flex-wrap: wrap;
+}
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 17px 20px 20px;
+  }
+
+  .container .box .pictures{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    column-gap: 25%;
+  }
+
+  .container .box .pictures img{
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 8px 6px 4px grey;
+    border-radius: 5px;
+      border-radius: 1em;
+      perspective: 600px;
+      transition: all 500ms;
+  }
+
+  .container .box .pictures img:hover{
+    background: #bfc1b217;
+    transform: translateY(-2px) scale(0.9);
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  }
+
+
+ .gallery .container .row .gallery-filter{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+ }
+ .gallery .gallery-filter .filter-item{
+    color: #000;
+    font-size: 17px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    display: inline block;
+    border-radius: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+    padding: 8px 25px 8px 25px;
+    line-height: 1.2;
+    transition: every 0.3s ease;
+ }
+
+ .gallery .gallery-filter .filter-item.active{
+    color: white;
+    border-color : #16b5ef;
+    background: #16b5ef;
+  }
+
+
+.gallery .gallery-item.show{
+	animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+.gallery .gallery-item.hide{
+	display: none;
+}
+
+
+.footer{
+    background-color: #000;
+    padding:50px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover {
+    color:#fff;
+    }
+  
+    .footer .row .active {
+      color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+  
+    .footer .frow{
+      justify-content: center;
+      align-items: center;
+      color: grey;
+      padding: 0.6% 0%;
+      font-size: 0.8em;
+    }
+    
+    .media-icons{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    
+    .media-icons a{
+      position: relative;
+      color: #fff;
+      font-size: 35px;
+      transition: 0.3s;
+      transition-property: transform;
+    }
+    
+    .media-icons a:not(:last-child){
+      margin-right: 70px;
+    }
+    
+    .media-icons a:hover{
+      transform: scale(1.5);
+    }
+  
+    @media (max-width: 2200px){
+        header .logo{
+            position: relative;
+            bottom : -6px;
+            font-size: 25px;
+            align-items: center;
+          }
+
+          .gallery .gallery-filter .filter-item{
+            font-size: 18px;
+         }
+
+         .footer .row{
+            padding: 15px 0px 15px 0px;
+            }
+    }
+@media (max-width: 1800px){
+}
+    @media (max-width: 1190px){
+        header .navigation{
+          display: none;
+        }
+      
+        label{
+          display: block;
+          font-size: 25px;
+          cursor: pointer;
+          transition: 0.3s;
+          transition-property: color;
+          align-items: center;
+        }
+      
+        label:hover{
+          color: #fff;
+        }
+      
+        label .close-btn{
+          display: none;
+        }
+      
+        #check:checked ~ header .navigation{
+          z-index: 2;
+          position: fixed;
+          background: rgba(2, 28, 35, 0.9);
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      
+        #check:checked ~ header .navigation a{
+          font-weight: 700;
+          margin-right: 0;
+          margin-bottom: 50px;
+          letter-spacing: 2px;
+        }
+      
+        #check:checked ~ header label .menu-btn {
+          display: none;
+        }
+      
+        #check:checked ~ header label .close-btn {
+          z-index: 2;
+          display: block;
+          position: fixed;
+        }
+      
+        label .menu-btn{
+          position: absolute;
+        }
+      
+        header .logo{
+          position: relative;
+          bottom : -6px;
+          font-size: 25px;
+        }
+      
+        .footer{
+          text-align:center;
+          padding:5%;
+          }
+          .footer .frow ul li{
+          display:block;
+          margin:10px 0px;
+          text-align:center;
+          }
+          .footer .frow a i{
+          margin:0% 3%;
+          }
+      
+      }
+      
+      @media (max-width: 810px){
+        .container .box{
+            flex-direction: column;
+          }
+        
+          .container .box .pictures{
+            width: 100%;
+          }
+          .footer .row{
+            padding: 10px 0px 10px 0px;
+            }
+      }
+
+      @media (max-width: 760px){
+        header .logo{
+            position: relative;
+            bottom : -6px;
+            font-size: 20px;
+            align-items: center;
+          }
+
+          .gallery .gallery-filter .filter-item{
+            font-size: 15px;
+         }
+
+         .footer .row{
+            padding: 10px 0px 10px 0px;
+            }
+    }
+      
+      @media (max-width: 710px){
+        .container .heading h3{
+            font-size: 2.5em;
+          }
+
+          .footer .row{
+            font-size:0.6em;
+            padding: 10px 0px 10px 0px;
+            }
+
+        .footer .frow{
+            font-size: 0.6rem;
+        }
+
+        .media-icons a{
+            font-size: 23px;
+            position: inherit;
+          }
+      }
+
+      @media (max-width: 610px){
+        .container .heading h3{
+            font-size: 2em;
+          }
+
+          .gallery .gallery-filter .filter-item{
+            font-size: 10px;
+         }
+
+          .footer .row{
+            font-size:0.5em;
+            padding : 3%;
+            }
+
+        .footer .frow{
+            font-size: 0.5rem;
+        }
+
+        .media-icons a{
+            font-size: 22px;
+          }
+      }
+
+      @media (max-width: 587px){
+        .footer .row ul li{
+            margin: 0px 20px;
+        }
+      }
+
+      @media (max-width: 510px){
+        header{
+            padding: 20px 70px;
+        }
+        label .menu-btn{
+            font-size: 20px;
+        }
+        .gallery .gallery-filter .filter-item{
+            font-size: 16px;
+            padding: 5px 10px 5px 10px;
+         }
+        .container .heading h3{
+            font-size: 1.5em;
+          }
+        }
+
+      @media (max-width: 470px){
+        header{
+            padding: 20px 60px;
+        }
+        label .menu-btn{
+            font-size: 20px;
+        }
+        .gallery .gallery-filter .filter-item{
+            font-size: 15px;
+            padding: 5px 6px 5px 6px;
+         }
+        .container .heading h3{
+            font-size: 1.5em;
+          }
+        .footer .row ul li{
+            margin: 0px 15px;
+        }
+      }
+
+      @media (max-width: 420px){
+        header{
+            padding: 20px 50px;
+        }
+        label .menu-btn{
+            font-size: 20px;
+        }
+        header .logo{
+            position: relative;
+            bottom : -6px;
+            font-size: 16px;
+            align-items: center;
+          }
+
+        .gallery .gallery-filter .filter-item{
+            font-size: 14px;
+            padding: 5px 6px 5px 6px;
+         }
+        .container .heading h3{
+            font-size: 1.5em;
+          }
+
+        .media-icons a{
+            font-size: 19px;
+          }
+
+          .media-icons a:not(:last-child){
+            margin-right: 40px;
+          }
+        
+          .footer .row{
+            font-size: 0.4rem;
+          }
+
+          .footer .frow{
+            font-size: 0.4rem;
+          }
+
+        .footer .row ul li{
+            margin: 0px 15px;
+        }
+      }
+
+      @media (max-width: 395px){
+        header{
+            padding: 20px 60px;
+        }
+        label .menu-btn{
+            font-size: 20px;
+        }
+        header .logo{
+            position: relative;
+            bottom : -6px;
+            font-size: 15px;
+            align-items: center;
+          }
+
+
+        .gallery .gallery-filter .filter-item{
+            font-size: 12px;
+            padding: 5px 6px 5px 6px;
+         }
+        .container .heading h3{
+            font-size: 1.2em;
+          }
+      }
+      @media (max-width: 363px){
+        header{
+            padding: 20px 40px;
+        }
+        label .menu-btn{
+            font-size: 20px;
+        }
+
+        header .logo{
+            position: relative;
+            bottom : -6px;
+            font-size: 12px;
+            align-items: center;
+          }
+
+        .gallery .gallery-filter .filter-item{
+            font-size: 10px;
+            padding: 5px 6px 5px 6px;
+         }
+        .container .heading h3{
+            font-size: 1em;
+            letter-spacing: 1px;
+          }
+        .footer .row ul li{
+            margin: 0px 10px;
+        }
+      }
+
+      @media (max-width: 317px){
+        .container .heading h3{
+            font-size: 0.9em;
+        }
+      }
+
+      @media (max-width: 304px){
+        header{
+            padding: 20px 40px;
+        }
+        label .menu-btn{
+            font-size: 20px;
+        }
+
+        .gallery .gallery-filter .filter-item{
+            font-size: 9px;
+            padding: 5px 6px 5px 6px;
+         }
+        .container .heading h3{
+            font-size: 0.8em;
+          }
+        
+        .footer .row ul li{
+            margin: 0px 8px;
+        }
+
+        .media-icons a:not(:last-child){
+            margin-right: 30px;
+          }
+      }
+
+      @media (max-width: 280px){
+        header{
+            padding: 20px 40px;
+        }
+        label .menu-btn{
+            font-size: 20px;
+        }
+        .gallery .gallery-filter .filter-item{
+            font-size: 7px;
+            padding: 5px 6px 5px 6px;
+         }
+        .container .heading h3{
+            font-size: 0.8em;
+          }
+        
+
+        .footer .row ul li{
+            margin: 0px 6px;
+        }
+
+        .media-icons a:not(:last-child){
+            margin-right: 30px;
+          }
+
+          .footer .row{
+            font-size:0.4em;
+            padding : 4%;
+            }
+      }
