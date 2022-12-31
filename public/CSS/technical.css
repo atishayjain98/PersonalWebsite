@@ -1017,6 +1017,10 @@ img {
 }
 /* For large devices */
 @media screen and (min-width: 1024px){
+    .nav_logo{
+        font-size: var(--h3-font-size);
+    }
+    
     .header,
     .main,
     .footer_container{
@@ -1048,9 +1052,9 @@ img {
         right: .5rem;
     }
 
-    .swiper-container-horizontal > .swiper-pagination-bullets{
-        /* bottom: -4.5rem; */
-    }
+    /* .swiper-container-horizontal > .swiper-pagination-bullets{
+         bottom: -4.5rem; 
+    } */
 
     .contact_form{
         width: 460px;
