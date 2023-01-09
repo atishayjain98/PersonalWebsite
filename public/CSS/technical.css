@@ -387,6 +387,7 @@ img {
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
+    box-shadow: 4px 3px 6px grey;
 }
 
 .about_description{
@@ -489,7 +490,7 @@ img {
     background-color: var(--first-color);
 }
 
-.skills_html{
+.skills_python{
     width: 90%;
 }
 
