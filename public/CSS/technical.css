@@ -490,12 +490,40 @@ img {
     background-color: var(--first-color);
 }
 
+.skills_dl{
+    width:50%;
+}
+
+.skills_vis{
+    width:90%;
+}
+
+.skills_stats{
+    width:60%;
+}
+
+.skills_ml{
+    width:60%;
+}
+
+.skills_r{
+    width:60%;
+}
+
+.skills_sql{
+    width:60%;
+}
+
 .skills_python{
-    width: 90%;
+    width: 80%;
+}
+
+.skills_html{
+    width:90%;
 }
 
 .skills_css{
-    width: 80%;
+    width: 70%;
 }
 
 .skills_js{
@@ -503,7 +531,7 @@ img {
 }
 
 .skills_react{
-    width: 50%;
+    width: 10%;
 }
 
 .skills_close .skills_list{
